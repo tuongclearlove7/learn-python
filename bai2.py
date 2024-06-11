@@ -24,6 +24,9 @@ def giai(a,b,c):
     if(delta > 0):
         x1 = (-b + math.sqrt(delta)) / (2 * a)
         x2 = (-b - math.sqrt(delta)) / (2 * a)
+
+        x = lambda a, b : a * b
+        print("kiểu: ",type(x));
         print("Phuong trinh co hai nghiem phan biet:")
         print("x1 =", x1)
         print("x2 =", x2)
