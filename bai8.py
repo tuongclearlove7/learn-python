@@ -1,8 +1,8 @@
 G = []
 
-def inpit_graph(path, G):
+def init_graph(path, G):
   with open(path) as f:
-    n = int(f.readline(), base=10)
+    n = int(f.readline(), base=10);
     for i in range(n + 1):
       G.append([])
       for j in range(n + 1):
@@ -27,7 +27,7 @@ def viewMatrix(G, n):
     print()
 
 def main():
-  n = inpit_graph('graph.inp', G);
+  n = init_graph('graph.inp', G);
   print("Xem ma trận G", end='\n');
   viewMatrix(G, n);
 
